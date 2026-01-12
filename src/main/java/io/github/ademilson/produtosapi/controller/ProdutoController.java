@@ -21,6 +21,7 @@ public class ProdutoController {
     public Produto salvar(@RequestBody Produto produto){
         System.out.println("Produto recebido: " + produto);
 
+
         var id = UUID.randomUUID().toString();
         produto.setId(id);
 
